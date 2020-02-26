@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medicamentos Controlados S.A</title>
+    <!-- <link rel="icon" href="images/comprimido.png"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+                <div class="logo">
+                    <img src="https://img.icons8.com/color/64/000000/pills.png">
+                </div>
+                <div class="busca">
+                    <form>
+                        <input type="text" placeholder="O que você procura?">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="login">
+                    <a href="#">Olá, faça seu login</a>
+                </div>
+                <div class="carrinho">
+                    <span>Carrinho de Compras</span>
+                    <img src="https://img.icons8.com/ios-glyphs/64/000000/shopping-cart.png" height="30px" width="30px">
+                </div> 
+        </nav>     
+    </header>
+
+    <div class="container" >
+    <form class="dadosMedicos">
+    <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="crm">CRM</label>
+            <input type="text" class="form-control" id="crm" name="crm" placeholder="Nº CRM">
+          </div>
+          
+       
+        <div class="form-group col-md-4 ">
+          <label for="dataReceita">Data da Receita</label>
+          <input type="date" class="form-control" id="dataReceita" name="dataReceita">
+        </div> 
+
+        <div class="form-group col-md-4 ">
+            <label for="qtdCaixas">Quantidade de Caixas</label>
+            <input type="number" class="form-control" id="qtdCaixas"  name="qtdCaixas" placeholder="Quantidade de Caixas">
+          </div>
+    </div>
+    <div class="form-group">
+        <label for="nome">Nome do Médico</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome do Médico">
+      </div>
+        <div class="form-row">
+        <div class="form-group col-md-8">
+            <label for="nomePaciente">Nome do Paciente</label>
+            <input type="text" class="form-control" id="nomePaciente"  name="nomePaciente" placeholder="Nome do Paciente">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="cpfPaciente">CPF do Paciente</label>
+            <input type="text" class="form-control" id="cpfPaciente"  name="cpfPaciente" placeholder="CPF"  maxlength="11" >
+            
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" class="form-control" id="dataNascimento"  name="dataNascimento" placeholder="Data de Nascimento">
+            </div>
+          <div class="form-group col-md-6">
+            <label for="sexo">Sexo</label> <br>
+           
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexoF" id="sexoF" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+             Feminino
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexoM" id="sexoM" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Masculino
+            </label>
+          </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexoND" id="sexoND" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Não Declarado
+            </label>
+            </div>
+          </div>
+        </div>
+    
+          <div class="form-group col-md-5">
+            <label for="tipoEnvio">Tipo de Envio</label>
+            <select id="tipoEnvio" name="tipoEnvio"  class="form-control">
+              <option selected>Escolher</option>
+              <option>Anexar Arquivo</option>
+              <option>WhatsApp</option>
+              <option>E-mail</option>
+            </select>
+          </div>
+         
+        <button type="submit" class="btn btn-info">Finalizar Compra</button>
+      </form>
+    </div>
+</div>
+</body>
+</html>
